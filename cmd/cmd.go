@@ -27,8 +27,8 @@ func ParseFlag() *Flags {
 }
 
 //FetchDirectory fetch directory name to be monitored from the command line argument
-//It returns Fullpath and Basepath to that directory
-func FetchDirectory() (string, string) {
+//It returns string value which is a fullpath to directory to be monitored
+func FetchDirectory() string {
 
 	args := os.Args
 	size := len(args)
@@ -48,5 +48,5 @@ func FetchDirectory() (string, string) {
 		log.Fatalln("Directory Doesn't exists")
 	}
 
-	return basepath, fullpath
+	return fullpath
 }
