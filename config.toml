@@ -1,0 +1,12 @@
+# Rorschach configuration file
+
+watchDir = "/home/ataul443/projects/rorschach/cmd"
+excludeDir = ["node_modules", ".git", ".idea"]
+scanInterval = 2
+
+# Rules to apply on events
+[[rule]]
+event = "MODIFY"
+pattern = "*.pika"
+command = "wc -w ${FULLPATH}"
+
