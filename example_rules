@@ -1,4 +1,0 @@
-# This rules file contails a series of rules (one per line) specified in the following format:
-# EVENT,     PATTERN,     ACTION
-
-"MODIFY"   "*.c"     "cc -o ${BASEPATH} ${FULLPATH}"
